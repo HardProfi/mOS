@@ -18,6 +18,6 @@ iF("/etc/","motd", "https://raw.githubusercontent.com/HardProfi/mOS/master/OS/et
 iF("/etc/","profile.lua", "https://raw.githubusercontent.com/HardProfi/mOS/master/OS/etc/profile.lua")
 iF("/lib/core/","boot.lua", "https://raw.githubusercontent.com/HardProfi/mOS/master/OS/lib/core/boot.lua")
 iF("/mOS/","run.lua","https://raw.githubusercontent.com/HardProfi/mOS/master/OS/mOS/run.lua")
-
+iF("/mOS/","gui.lua","https://raw.githubusercontent.com/HardProfi/mOS/master/OS/mOS/gui.lua")
 fs.remove("/home")
 shell.execute("reboot")
