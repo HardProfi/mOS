@@ -38,4 +38,4 @@ os.setenv("LS_COLORS", "di=0;36:fi=0:ln=0;33:*.lua=0;32")
 shell.setWorkingDirectory(os.getenv("HOME"))
 
 
-shell.execute("/mOS/gm.lua")
+shell.execute("/mOS/run.lua")
