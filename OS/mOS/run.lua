@@ -11,18 +11,16 @@ local pass = string.reverse(cp.address())
 local file = fs.open("/mOS/pass.sc","w")
 file:write(pass)
 file:close()
-ep.setData(pass)
+ep.setData("pass")
 shell.execute("reboot")
 else
 local file = io.open("/mOS/pass.sc","r")
 local pass = file:read("a")
-
-
-if ep.getData() == pass then
+if string.reverse(cp.address()) == pass then
 shell.execute("gui.lua")
 else
-print("Вы пытались запустить mOS не офицальном устройстве")
-os.sleep(2)
-shell.execute("shutdown")
+print("Вы запустили mOS не оригиналном устройстве")
+os.sleep(5)
+shell.execute("reboot")
 end
 end
