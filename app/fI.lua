@@ -3,8 +3,8 @@ local fs = require("filesystem")
 
 local function iF(path, name, sulka)
 
-if fs.exists(path..name) == false then
-print("l")
+if fs.exists(path..name) == true then
+fs.remove(path..name)
 end
 
 
