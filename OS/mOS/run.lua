@@ -12,6 +12,7 @@ local file = fs.open("/mOS/pass.sc","w")
 file:write(pass)
 file:close()
 ep.setData(pass)
+shell.execute("reboot")
 else
 local file = io.open("/mOS/pass.sc","r")
 local pass = file:read("a")
