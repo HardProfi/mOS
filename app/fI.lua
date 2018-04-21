@@ -9,7 +9,7 @@ end
 
 
 
-shell.execute("wget -q "..sulka.." "..path)
+shell.execute("wget -q "..sulka.." "..path..name)
 end
 
 iF("/etc/","motd", "https://raw.githubusercontent.com/HardProfi/mOS/master/OS/etc/motd")
