@@ -6,7 +6,7 @@ local function iF(path, name, sulka)
 if fs.exists(path..name) == true then
 fs.remove(path..name)
 else
-fs.makeDirectory("/test/dir/")
+fs.makeDirectory(path)
 end
  
  
