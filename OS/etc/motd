@@ -6,4 +6,4 @@ local math = require("math")
 local string = require("string")
 local welcomeText = "mOS is loading."
 gpu.set(Ws/2-math.floor(string.len(welcomeText)/2),math.ceil(Hs/2), welcomeText)
-os.sleep(5)
+os.sleep(2)
