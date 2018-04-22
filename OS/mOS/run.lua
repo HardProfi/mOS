@@ -19,7 +19,7 @@ local pass = file:read("a")
 if string.reverse(cp.address()) == pass then
 shell.execute("/mOS/gui.lua")
 else
-print("Вы запустили mOS не оригиналном устройстве")
+print("Вы запустили mOS не на том устройстве")
 os.sleep(5)
 shell.execute("reboot")
 end
