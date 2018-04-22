@@ -5,5 +5,7 @@ local Ws,Hs = gpu.getResolution()
 local math = require("math")
 local string = require("string")
 local welcomeText = "Загрузка mOS!"
+
+gpu.setResolution(Hs,Ws)
 gpu.set(Ws/2-math.floor(string.len(welcomeText)/2),math.ceil(Hs/2), welcomeText)
 os.sleep(2)
