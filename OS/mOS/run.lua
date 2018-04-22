@@ -17,7 +17,7 @@ else
 local file = io.open("/mOS/pass.sc","r")
 local pass = file:read("a")
 if string.reverse(cp.address()) == pass then
-shell.execute("gui.lua")
+shell.execute("/mOS/gui.lua")
 else
 print("Вы запустили mOS не оригиналном устройстве")
 os.sleep(5)
