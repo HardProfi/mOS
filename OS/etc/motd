@@ -4,8 +4,8 @@ local os = require("os")
 local Ws,Hs = gpu.getResolution()
 local math = require("math")
 local string = require("string")
-local welcomeText = "Загрузка mOS!"
+local welcomeText = "Загрузка mOS"
 
 --gpu.setResolution(40,40)
-gpu.set(20-6,20, welcomeText)
+gpu.set(Ws/2-6,1, welcomeText)
 os.sleep(2)
